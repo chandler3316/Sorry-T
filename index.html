@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, Stanley</title>
+    <style>
+        /* Reset default body margins */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        /* Responsive container for the image and text */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%; /* Ensure the image fills the screen width */
+            max-width: 600px; /* Limit the maximum width for larger screens */
+        }
+
+        /* Image styling */
+        .image-container img {
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Avoid unnecessary gaps around images */
+        }
+
+        /* Apology text overlay */
+        .image-container .apology-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 5vw; /* Responsive font size based on screen width */
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Larger screens */
+        @media (min-width: 768px) {
+            .image-container .apology-text {
+                font-size: 24px; /* Fixed font size for tablets and larger */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="StanleyT.jpg" alt="Stanley Cup">
+        <div class="apology-text">I'm sorry the stanley didn't arrive on time😢😢</div>
+    </div>
+</body>
+</html>
